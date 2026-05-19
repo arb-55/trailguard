@@ -1,0 +1,18 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+main {
+  position: relative;
+}
+
+/* Section dividers */
+main > section:not(:last-child)::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  max-width: 1200px;
+  margin: 0 auto;
+}
